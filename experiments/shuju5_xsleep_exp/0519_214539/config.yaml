@@ -1,0 +1,85 @@
+data_loader:
+  batch_size:
+    eval: 32
+    test: 32
+    train: 32
+  data:
+    eval:
+    - - vincents
+      - eval
+    test:
+    - - vincents
+      - test
+    train:
+    - - vincents
+      - train
+  data_dir: E:\shuju\shuchu5
+  import: src.data_loader.dataset.MultiCohortDataset
+  modalities:
+  - eeg
+  - eog
+  - emg
+  num_channels: 5
+  num_classes: 5
+  segment_length: 600
+  train_fraction: null
+exp:
+  name: shuju5_xsleep_exp
+lr_scheduler:
+  args:
+    base_lr: 0.0001
+    max_lr: 0.005
+    mode: triangular
+    step_size_up: 16
+  import: torch.optim.lr_scheduler.CyclicLR
+metrics:
+- overall_accuracy
+- balanced_accuracy
+- precision
+- recall
+- f1
+- kappa
+network:
+  deep_nhidden: 768
+  deep_nlayer: 2
+  deep_ntime: 3840
+  dropout_cnn: 0.5
+  dropout_rnn: 0.75
+  epoch_seq_len: 20
+  g_enc_depths:
+  - 32
+  - 32
+  - 64
+  - 64
+  - 128
+  - 128
+  - 256
+  - 256
+  - 512
+  import: src.model.xsleepnet_xiaorong1.XSleepNet
+  l2_reg_lambda: 0.001
+  seq_attention_size1: 32
+  seq_frame_seq_len: 29
+  seq_ndim: 129
+  seq_nfilter: 32
+  seq_nhidden1: 64
+  seq_nhidden2: 64
+  seq_nlayer1: 1
+  seq_nlayer2: 1
+optimizer:
+  args:
+    lr: 0.0001
+    momentum: 0.9
+    nesterov: true
+    weight_decay: 0.0001
+  import: torch.optim.SGD
+trainer:
+  epochs: 100
+  log_dir: experiments/runs
+  monitor: min val_loss
+  n_gpu: 1
+  num_workers: 0
+  save_dir: experiments
+  save_freq: 1
+  tensorboardX: false
+  verbosity: 2

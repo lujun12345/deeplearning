@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Model checkpoints
+*.pth
+
+# Prediction outputs (pickle, csv, png generated from experiments)
+experiments/runs/
+
+# Experiment logs (generated CSVs)
+experiments/**/log.csv
+
+# Generated images
+*.png
+
+# Environment
+env.yaml
+
+# Pickle files
+*.pkl
+
+# Empty leftover file
+python
+
+# OS
+.DS_Store
+Thumbs.db

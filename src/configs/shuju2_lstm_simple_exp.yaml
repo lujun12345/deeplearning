@@ -1,0 +1,93 @@
+exp:
+  name: shuju2_lstm_simple2_exp
+data_loader:
+  import: src.data_loader.dataset.MultiCohortDataset
+  batch_size:
+    train: 32
+    eval: 32
+    test: 32
+  data:
+    train:
+      - [apnea, train]
+      - [patients, train]
+      - [PLMs, train]
+      - [Subjects, train]
+    eval:
+      - [apnea, eval]
+      - [patients, eval]
+      - [PLMs, eval]
+      - [Subjects, eval]
+    test:
+      - [apnea, test]
+      - [patients, test]
+      - [PLMs, test]
+      - [Subjects, test]
+  data_dir: E:\shuju\shuchu2
+  modalities: [eeg, eog, emg]
+  num_channels: 5       #有多少个通道
+  train_fraction:
+  num_classes: 5
+  segment_length: 50   # Length in seconds
+network:
+  import: src.model.lstm_simple_model.CNNLSTMModel
+  filter_base: 2
+  kernel_size: 3
+  max_pooling: 2
+  num_blocks: 7
+  lstm_bidirectional: True
+  lstm_num_layers: 2
+  lstm_num_units: 1024
+loss:
+  import: src.model.losses.temporal_crossentropy_loss
+metrics: [overall_accuracy, balanced_accuracy, precision, recall, f1, kappa]
+# metrics: ['overall_accuracy', 'balanced_accuracy', 'kappa', 'balanced_precision', 'overall_precision', 'balanced_recall', 'overall_recall', 'balanced_f1', 'overall_f1']
+# optimizer:
+#   import: torch.optim.Adam
+#   args:
+#     lr: 0.1
+#     momentum: 0.9
+#     nesterov: true
+# lr_scheduler:
+#   import: torch.optim.lr_scheduler.CyclicLR
+#   args:
+#     base_lr: 0.05
+#     max_lr: 0.15
+#     step_size_up: 500
+#     mode: 'triangular'
+# optimizer:
+#   import: torch.optim.Adam
+#   args:
+#     lr: 0.0001
+#     weight_decay: 0
+#     amsgrad: true
+# lr_scheduler:
+#   import: torch.optim.lr_scheduler.ReduceLROnPlateau
+#   args:
+#     mode: 'min'
+#     factor: 0.5
+#     patience: 5
+#     verbose: true
+optimizer:
+  import: torch.optim.SGD
+  args:
+    lr: 0.0001
+    momentum: 0.9
+    nesterov: true
+    weight_decay: 0.0001
+lr_scheduler:
+  import: torch.optim.lr_scheduler.CyclicLR
+  args:
+    base_lr: 0.001
+    max_lr: 0.01
+    step_size_up: 16
+    mode: 'triangular'
+trainer:
+  epochs: 50 # Number of training epochs
+  log_dir: experiments/runs # Directory in which to save log files for tensorboardX visualization
+  monitor: min val_loss #  de and metric for model performance monitoring. set 'off' to disable.
+  n_gpu: 1
+  num_workers: 0
+  save_dir: experiments
+  save_freq: 1 # save checkpoints every save_freq epochs
+  tensorboardX: false # Enable tensorboardX visualization support
+  verbosity: 2 # 0: quiet, 1: per epoch, 2: full

@@ -1,0 +1,72 @@
+data_loader:
+  batch_size:
+    eval: 32
+    test: 32
+    train: 32
+  data:
+    eval:
+    - - haaglanden
+      - eval
+    test:
+    - - haaglanden
+      - test
+    train:
+    - - haaglanden
+      - train
+  data_dir: E:\shuju\shuchu4
+  import: src.data_loader.dataset.MultiCohortDataset
+  modalities:
+  - eeg
+  - eog
+  - emg
+  num_channels: 5
+  num_classes: 5
+  segment_length: 300
+  train_fraction: null
+exp:
+  name: shuju4_transformer_exp
+loss:
+  import: src.model.losses.temporal_crossentropy_loss
+lr_scheduler:
+  args:
+    base_lr: 0.0001
+    max_lr: 0.005
+    mode: triangular
+    step_size_up: 16
+  import: torch.optim.lr_scheduler.CyclicLR
+metrics:
+- overall_accuracy
+- balanced_accuracy
+- precision
+- recall
+- f1
+- kappa
+network:
+  atten_dropout: 0.1
+  d_model: 64
+  dim_feedforward: 512
+  dropout: 0.1
+  forward_dropout: 0.1
+  import: src.model.transformer_blocks.Seq_Cross_Transformer_Network
+  num_channels: 1
+  num_epochs: 10
+  num_head: 8
+  position_dropout: 0.1
+  window_size: 64
+optimizer:
+  args:
+    lr: 0.0001
+    momentum: 0.9
+    nesterov: true
+    weight_decay: 0.0001
+  import: torch.optim.SGD
+trainer:
+  epochs: 100
+  log_dir: experiments/runs
+  monitor: min val_loss
+  n_gpu: 1
+  num_workers: 0
+  save_dir: experiments
+  save_freq: 1
+  tensorboardX: false
+  verbosity: 2

@@ -1,0 +1,31 @@
+{
+    "EEG_FpzCz": ["FP1-A2"],
+    "EEG_PzOz": ["O1-A2"],
+
+    "EOG": ["EOG1","EOG1-A2"],
+    "EMG": ["EMG1"],
+
+    "A1": [],
+    "A2": [],
+    "LChin": [],
+    "RChin": [],
+
+    "categories": [
+        "EEG_FpzCz", "EEG_PzOz", "EOG", "EMG", "A1", "A2", "LChin", "RChin"
+    ],
+    "edfFiles": [
+        "E:\\shuju\\2650142\\DatabaseApnea\\excerpt1.edf",
+        "E:\\shuju\\2650142\\DatabaseApnea\\excerpt10.edf",
+        "E:\\shuju\\2650142\\DatabaseApnea\\excerpt11.edf",
+        "E:\\shuju\\2650142\\DatabaseApnea\\excerpt12.edf",
+        "E:\\shuju\\2650142\\DatabaseApnea\\excerpt2.edf",
+        "E:\\shuju\\2650142\\DatabaseApnea\\excerpt3.edf",
+        "E:\\shuju\\2650142\\DatabaseApnea\\excerpt4.edf",
+        "E:\\shuju\\2650142\\DatabaseApnea\\excerpt5.edf",
+        "E:\\shuju\\2650142\\DatabaseApnea\\excerpt6.edf",
+        "E:\\shuju\\2650142\\DatabaseApnea\\excerpt7.edf",
+        "E:\\shuju\\2650142\\DatabaseApnea\\excerpt8.edf",
+        "E:\\shuju\\2650142\\DatabaseApnea\\excerpt9.edf"
+    ],
+    "pathname": "E:\\shuju\\2650142\\DatabaseApnea"
+}

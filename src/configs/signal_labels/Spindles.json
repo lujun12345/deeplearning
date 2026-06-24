@@ -1,0 +1,17 @@
+{
+
+    "categories": [
+        "EEG_FpzCz", "EEG_PzOz", "EOG", "EMG", "A1", "A2", "LChin", "RChin"
+    ],
+    "edfFiles": [
+        "E:\\shuju\\2650142\\DatabaseSpindles\\excerpt1.edf",
+        "E:\\shuju\\2650142\\DatabaseSpindles\\excerpt2.edf",
+        "E:\\shuju\\2650142\\DatabaseSpindles\\excerpt3.edf",
+        "E:\\shuju\\2650142\\DatabaseSpindles\\excerpt4.edf",
+        "E:\\shuju\\2650142\\DatabaseSpindles\\excerpt5.edf",
+        "E:\\shuju\\2650142\\DatabaseSpindles\\excerpt6.edf",
+        "E:\\shuju\\2650142\\DatabaseSpindles\\excerpt7.edf",
+        "E:\\shuju\\2650142\\DatabaseSpindles\\excerpt8.edf"
+    ],
+    "pathname": "E:\\shuju\\2650142\\DatabaseSpindles"
+}

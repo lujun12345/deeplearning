@@ -1,0 +1,39 @@
+{
+    "EEG_FpzCz": ["FP1-A1", "CZ-A1", "NAF2P-A1", "NAF1", "FP2-A1", "CZ2-A1"],
+    "EEG_PzOz": ["O1-A1", "O2-A1"],
+
+    "EOGL": ["EOG1-A1"],
+    "EOGR": ["EOG2-A1"],
+    "EMG": ["EMG1"],
+
+    "A1": [],
+    "A2": [],
+    "LChin": [],
+    "RChin": [],
+    "categories": [
+        "EEG_FpzCz", "EEG_PzOz", "EOGL", "EOGR", "EMG", "A1", "A2", "LChin", "RChin"
+    ],
+    "edfFiles": [
+        "E:\\shuju\\2650142\\DatabaseArtifacts\\excerpt1.edf",
+        "E:\\shuju\\2650142\\DatabaseArtifacts\\excerpt10.edf",
+        "E:\\shuju\\2650142\\DatabaseArtifacts\\excerpt11.edf",
+        "E:\\shuju\\2650142\\DatabaseArtifacts\\excerpt12.edf",
+        "E:\\shuju\\2650142\\DatabaseArtifacts\\excerpt13.edf",
+        "E:\\shuju\\2650142\\DatabaseArtifacts\\excerpt14.edf",
+        "E:\\shuju\\2650142\\DatabaseArtifacts\\excerpt15.edf",
+        "E:\\shuju\\2650142\\DatabaseArtifacts\\excerpt16.edf",
+        "E:\\shuju\\2650142\\DatabaseArtifacts\\excerpt17.edf",
+        "E:\\shuju\\2650142\\DatabaseArtifacts\\excerpt18.edf",
+        "E:\\shuju\\2650142\\DatabaseArtifacts\\excerpt19.edf",
+        "E:\\shuju\\2650142\\DatabaseArtifacts\\excerpt2.edf",
+        "E:\\shuju\\2650142\\DatabaseArtifacts\\excerpt20.edf",
+        "E:\\shuju\\2650142\\DatabaseArtifacts\\excerpt3.edf",
+        "E:\\shuju\\2650142\\DatabaseArtifacts\\excerpt4.edf",
+        "E:\\shuju\\2650142\\DatabaseArtifacts\\excerpt5.edf",
+        "E:\\shuju\\2650142\\DatabaseArtifacts\\excerpt6.edf",
+        "E:\\shuju\\2650142\\DatabaseArtifacts\\excerpt7.edf",
+        "E:\\shuju\\2650142\\DatabaseArtifacts\\excerpt8.edf",
+        "E:\\shuju\\2650142\\DatabaseArtifacts\\excerpt9.edf"
+    ],
+    "pathname": "E:\\shuju\\2650142\\DatabaseArtifacts"
+}

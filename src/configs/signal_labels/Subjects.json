@@ -1,0 +1,38 @@
+{
+    "EEG_FpzCz": ["FP1-A2"],
+    "EEG_PzOz": ["O1-A2"],
+
+    "EOG": ["EOG1","EOG1-A2"],
+    "EMG": ["EMG1"],
+
+    "A1": [],
+    "A2": [],
+    "LChin": [],
+    "RChin": [],
+    "categories": [
+        "EEG_FpzCz", "EEG_PzOz", "EOG", "EMG", "A1", "A2", "LChin", "RChin"
+    ],
+    "edfFiles": [
+        "E:\\shuju\\2650142\\DatabaseSubjects\\subject1.edf",
+        "E:\\shuju\\2650142\\DatabaseSubjects\\subject10.edf",
+        "E:\\shuju\\2650142\\DatabaseSubjects\\subject11.edf",
+        "E:\\shuju\\2650142\\DatabaseSubjects\\subject12.edf",
+        "E:\\shuju\\2650142\\DatabaseSubjects\\subject13.edf",
+        "E:\\shuju\\2650142\\DatabaseSubjects\\subject14.edf",
+        "E:\\shuju\\2650142\\DatabaseSubjects\\subject15.edf",
+        "E:\\shuju\\2650142\\DatabaseSubjects\\subject16.edf",
+        "E:\\shuju\\2650142\\DatabaseSubjects\\subject17.edf",
+        "E:\\shuju\\2650142\\DatabaseSubjects\\subject18.edf",
+        "E:\\shuju\\2650142\\DatabaseSubjects\\subject19.edf",
+        "E:\\shuju\\2650142\\DatabaseSubjects\\subject2.edf",
+        "E:\\shuju\\2650142\\DatabaseSubjects\\subject20.edf",
+        "E:\\shuju\\2650142\\DatabaseSubjects\\subject3.edf",
+        "E:\\shuju\\2650142\\DatabaseSubjects\\subject4.edf",
+        "E:\\shuju\\2650142\\DatabaseSubjects\\subject5.edf",
+        "E:\\shuju\\2650142\\DatabaseSubjects\\subject6.edf",
+        "E:\\shuju\\2650142\\DatabaseSubjects\\subject7.edf",
+        "E:\\shuju\\2650142\\DatabaseSubjects\\subject8.edf",
+        "E:\\shuju\\2650142\\DatabaseSubjects\\subject9.edf"
+    ],
+    "pathname": "E:\\shuju\\2650142\\DatabaseSubjects"
+}

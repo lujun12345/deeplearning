@@ -1,0 +1,28 @@
+{
+    "EEG_FpzCz": ["FP1-A2"],
+    "EEG_PzOz": ["O1-A2"],
+
+    "EOG": ["EOG1","EOG1-A2"],
+    "EMG": ["EMG1"],
+
+    "A1": [],
+    "A2": [],
+    "LChin": [],
+    "RChin": [],
+    "categories": [
+        "EEG_FpzCz", "EEG_PzOz", "EOG", "EMG", "A1", "A2", "LChin", "RChin"
+    ],
+    "edfFiles": [
+        "E:\\shuju\\2650142\\DatabasePLMs\\excerpt1.edf",
+        "E:\\shuju\\2650142\\DatabasePLMs\\excerpt10.edf",
+        "E:\\shuju\\2650142\\DatabasePLMs\\excerpt2.edf",
+        "E:\\shuju\\2650142\\DatabasePLMs\\excerpt3.edf",
+        "E:\\shuju\\2650142\\DatabasePLMs\\excerpt4.edf",
+        "E:\\shuju\\2650142\\DatabasePLMs\\excerpt5.edf",
+        "E:\\shuju\\2650142\\DatabasePLMs\\excerpt6.edf",
+        "E:\\shuju\\2650142\\DatabasePLMs\\excerpt7.edf",
+        "E:\\shuju\\2650142\\DatabasePLMs\\excerpt8.edf",
+        "E:\\shuju\\2650142\\DatabasePLMs\\excerpt9.edf"
+    ],
+    "pathname": "E:\\shuju\\2650142\\DatabasePLMs"
+}

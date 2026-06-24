@@ -1,0 +1,81 @@
+data_loader:
+  batch_size:
+    eval: 16
+    test: 16
+    train: 16
+  data:
+    eval:
+    - - cassette
+      - eval
+    - - telemetry
+      - eval
+    test:
+    - - cassette
+      - test
+    - - telemetry
+      - test
+    train:
+    - - cassette
+      - train
+    - - telemetry
+      - train
+  data_dir: E:\shuju\shuchu3
+  import: src.data_loader.dataset.MultiCohortDataset
+  modalities:
+  - eeg
+  - eog
+  - emg
+  num_channels: 4
+  num_classes: 5
+  segment_length: 300
+  train_fraction: null
+exp:
+  name: shuju3_usleep_exp
+loss:
+  import: src.model.losses.temporal_crossentropy_loss
+lr_scheduler:
+  args:
+    base_lr: 0.0001
+    max_lr: 0.005
+    mode: triangular
+    step_size_up: 16
+  import: torch.optim.lr_scheduler.CyclicLR
+metrics:
+- overall_accuracy
+- balanced_accuracy
+- precision
+- recall
+- f1
+- kappa
+network:
+  activation: elu
+  complexity_factor: 2
+  data_per_prediction: 3840
+  dense_act: tanh
+  depth: 12
+  dilation: 1
+  import: src.model.U_sleep.USleepModel
+  init_filters: 5
+  input_dims: 38400
+  kernel_size: 9
+  l2_reg: 0.0
+  n_periods: 10
+  padding: same
+  transition_window: 1
+optimizer:
+  args:
+    lr: 0.0001
+    momentum: 0.9
+    nesterov: true
+    weight_decay: 0.0001
+  import: torch.optim.SGD
+trainer:
+  epochs: 100
+  log_dir: experiments/runs
+  monitor: min val_loss
+  n_gpu: 1
+  num_workers: 0
+  save_dir: experiments
+  save_freq: 1
+  tensorboardX: false
+  verbosity: 2

@@ -1,0 +1,29 @@
+{
+    "EEG_FpzCz": ["FP1-A2", "CZ-A1", "NAF2P-A1", "NAF1", "FP2-A1", "CZ2-A1"],
+    "EEG_PzOz": ["O1-A2", "O2-A1"],
+
+    "EOGL": ["EOG1","EOG1-A2"],
+    "EOGR": ["EOG2","EOG2-A2"],
+    "EMG": ["EMG1", "EMG2", "EMG3"],
+
+    "A1": [],
+    "A2": [],
+    "LChin": [],
+    "RChin": [],
+    "categories": [
+        "EEG_FpzCz", "EEG_PzOz", "EOGL", "EOGR", "EMG", "A1", "A2", "LChin", "RChin"
+    ],
+    "edfFiles": [
+        "E:\\shuju\\2650142\\DatabaseKcomplexes\\excerpt1.edf",
+        "E:\\shuju\\2650142\\DatabaseKcomplexes\\excerpt10.edf",
+        "E:\\shuju\\2650142\\DatabaseKcomplexes\\excerpt2.edf",
+        "E:\\shuju\\2650142\\DatabaseKcomplexes\\excerpt3.edf",
+        "E:\\shuju\\2650142\\DatabaseKcomplexes\\excerpt4.edf",
+        "E:\\shuju\\2650142\\DatabaseKcomplexes\\excerpt5.edf",
+        "E:\\shuju\\2650142\\DatabaseKcomplexes\\excerpt6.edf",
+        "E:\\shuju\\2650142\\DatabaseKcomplexes\\excerpt7.edf",
+        "E:\\shuju\\2650142\\DatabaseKcomplexes\\excerpt8.edf",
+        "E:\\shuju\\2650142\\DatabaseKcomplexes\\excerpt9.edf"
+    ],
+    "pathname": "E:\\shuju\\2650142\\DatabaseKcomplexes"
+}

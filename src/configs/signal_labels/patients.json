@@ -1,0 +1,45 @@
+{
+    "EEG_FpzCz": ["FP1-A2"],
+    "EEG_PzOz": ["O1-A2"],
+
+    "EOG": ["EOG1","EOG1-A2"],
+    "EMG": ["EMG1"],
+
+    "A1": [],
+    "A2": [],
+    "LChin": [],
+    "RChin": [],
+    "categories": [
+        "EEG_FpzCz", "EEG_PzOz", "EOG", "EMG", "A1", "A2", "LChin", "RChin"
+    ],
+    "edfFiles": [
+        "E:\\shuju\\2650142\\DatabasePatients\\patient1.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient10.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient11.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient12.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient13.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient14.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient15.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient16.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient17.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient18.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient19.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient2.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient20.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient21.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient22.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient23.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient24.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient25.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient26.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient27.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient3.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient4.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient5.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient6.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient7.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient8.edf",
+        "E:\\shuju\\2650142\\DatabasePatients\\patient9.edf"
+    ],
+    "pathname": "E:\\shuju\\2650142\\DatabasePatients"
+}

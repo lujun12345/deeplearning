@@ -1,0 +1,58 @@
+exp:
+  name: my_exp
+data_loader:
+  import: src.data_loader.dataset.MultiCohortDataset
+  batch_size:
+    train: 32
+    eval: 32
+    test: 32
+  data:
+    train:
+      - [shuju1, train]
+    eval:
+      - [shuju1, eval]
+    test:
+      - [shuju1, test]
+  data_dir: E:\shuju\shuchu
+  modalities: [eeg, eog, emg]
+  train_fraction:
+  num_classes: 5
+  segment_length: 300 # Length in seconds
+network:
+  import: src.model.rnn_model.RnnModel
+  filter_base: 4
+  kernel_size: 3
+  max_pooling: 2
+  num_blocks: 7
+  rnn_bidirectional: true
+  rnn_num_layers: 1
+  rnn_num_units: 1024
+loss:
+  import: src.model.losses.temporal_crossentropy_loss
+metrics: [overall_accuracy, balanced_accuracy, precision, recall, f1, kappa]
+
+optimizer:
+  import: torch.optim.SGD
+  args:
+    lr: 0.0001
+    momentum: 0.9
+    nesterov: true
+    weight_decay: 0.0001
+lr_scheduler:
+  import: torch.optim.lr_scheduler.CyclicLR
+  args:
+    base_lr: 0.0001
+    max_lr: 0.005
+    step_size_up: 16
+    mode: 'triangular'
+trainer:
+  # early_stop: 11
+  epochs: 100 # Number of training epochs
+  log_dir: experiments/runs # Directory in which to save log files for tensorboardX visualization
+  monitor: min val_loss #  de and metric for model performance monitoring. set 'off' to disable.
+  n_gpu: 1
+  num_workers: 0
+  save_dir: experiments
+  save_freq: 1 # save checkpoints every save_freq epochs
+  tensorboardX: false # Enable tensorboardX visualization support
+  verbosity: 2 # 0: quiet, 1: per epoch, 2: full
